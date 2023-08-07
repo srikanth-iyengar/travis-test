@@ -1,5 +1,9 @@
 name: Docker Image CI
 
+env:
+  DOCKER_USERNAME: ${{ DOCKER_USERNAME }}
+  DOCKER_PASSWORD: ${{ DOCKER_PASSWORD }}
+
 on:
   push:
     branches: [ "main" ]
