@@ -1,8 +1,8 @@
 name: Docker Image CI
 
 env:
-  DOCKER_USERNAME: ${{ DOCKER_USERNAME }}
-  DOCKER_PASSWORD: ${{ DOCKER_PASSWORD }}
+  DOCKER_USERNAME: ${{ env.DOCKER_USERNAME }}
+  DOCKER_PASSWORD: ${{ env.DOCKER_PASSWORD }}
 
 on:
   push:
